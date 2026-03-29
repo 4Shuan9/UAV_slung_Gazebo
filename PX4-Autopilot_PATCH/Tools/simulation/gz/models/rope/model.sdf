@@ -8,22 +8,22 @@
       <inertial>
         <mass>0.001</mass>
         <inertia>
-          <ixx>4.000000000000001e-08</ixx>
-          <iyy>4.000000000000001e-08</iyy>
-          <izz>4.000000000000001e-08</izz>
+          <ixx>4e-08</ixx>
+          <iyy>4e-08</iyy>
+          <izz>4e-08</izz>
         </inertia>
       </inertial>
        <collision name='begin_link_collision'>
         <geometry>
           <sphere>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </sphere>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='begin_link_visual'>
         <geometry>
           <sphere>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </sphere>
         </geometry>
       </visual>
@@ -31,30 +31,30 @@
     <link name='link_0'>
       <pose>0.025 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_0_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_0_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -63,7 +63,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='begin_joint_2' type='universal'>
       <pose relative_to='begin_link'/>
@@ -71,39 +70,45 @@
       <parent>begin_link</parent>
       <axis>
         <xyz>1 0 0</xyz>
+        <dynamics>
+          <damping>0.1</damping>
+        </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>0.1</damping>
+        </dynamics>
       </axis2>
     </joint>
-    
+
     <link name='link_1'>
       <pose>0.07500000000000001 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_1_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_1_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -112,12 +117,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
-      <sensor name="imu_sensor" type="imu">
-        <always_on>1</always_on>
-        <update_rate>250</update_rate>
-        <visualize>true</visualize>
-      </sensor>
     </link>
     <joint name='joint_1_2' type='universal'>
       <pose relative_to='link_0'>0 0 0.025 0 0 0</pose>
@@ -132,7 +131,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -144,37 +143,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_2'>
       <pose>0.125 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_2_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_2_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -183,7 +182,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_2_2' type='universal'>
       <pose relative_to='link_1'>0 0 0.025 0 0 0</pose>
@@ -198,7 +196,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -210,37 +208,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_3'>
       <pose>0.17500000000000002 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_3_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_3_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -249,7 +247,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_3_2' type='universal'>
       <pose relative_to='link_2'>0 0 0.025 0 0 0</pose>
@@ -264,7 +261,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -276,37 +273,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_4'>
       <pose>0.225 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_4_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_4_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -315,7 +312,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_4_2' type='universal'>
       <pose relative_to='link_3'>0 0 0.025 0 0 0</pose>
@@ -330,7 +326,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -342,37 +338,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_5'>
       <pose>0.275 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_5_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_5_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -381,7 +377,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_5_2' type='universal'>
       <pose relative_to='link_4'>0 0 0.025 0 0 0</pose>
@@ -396,7 +391,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -408,37 +403,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_6'>
       <pose>0.32500000000000007 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_6_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_6_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -447,7 +442,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_6_2' type='universal'>
       <pose relative_to='link_5'>0 0 0.025 0 0 0</pose>
@@ -462,7 +456,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -474,37 +468,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_7'>
       <pose>0.37500000000000006 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_7_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_7_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -513,7 +507,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_7_2' type='universal'>
       <pose relative_to='link_6'>0 0 0.025 0 0 0</pose>
@@ -528,7 +521,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -540,37 +533,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_8'>
       <pose>0.42500000000000004 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_8_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_8_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -579,7 +572,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_8_2' type='universal'>
       <pose relative_to='link_7'>0 0 0.025 0 0 0</pose>
@@ -594,7 +586,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -606,37 +598,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_9'>
       <pose>0.47500000000000003 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_9_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_9_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -645,7 +637,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_9_2' type='universal'>
       <pose relative_to='link_8'>0 0 0.025 0 0 0</pose>
@@ -660,7 +651,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -672,37 +663,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_10'>
       <pose>0.525 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_10_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_10_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -711,7 +702,11 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
+      <sensor name="imu_sensor" type="imu">
+        <always_on>1</always_on>
+        <update_rate>250</update_rate>
+        <visualize>true</visualize>
+      </sensor>
     </link>
     <joint name='joint_10_2' type='universal'>
       <pose relative_to='link_9'>0 0 0.025 0 0 0</pose>
@@ -726,7 +721,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -738,37 +733,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_11'>
       <pose>0.5750000000000001 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_11_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_11_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -777,7 +772,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_11_2' type='universal'>
       <pose relative_to='link_10'>0 0 0.025 0 0 0</pose>
@@ -792,7 +786,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -804,37 +798,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_12'>
       <pose>0.6250000000000001 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_12_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_12_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -843,7 +837,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_12_2' type='universal'>
       <pose relative_to='link_11'>0 0 0.025 0 0 0</pose>
@@ -858,7 +851,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -870,37 +863,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_13'>
       <pose>0.675 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_13_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_13_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -909,7 +902,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_13_2' type='universal'>
       <pose relative_to='link_12'>0 0 0.025 0 0 0</pose>
@@ -924,7 +916,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -936,37 +928,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_14'>
       <pose>0.7250000000000001 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_14_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_14_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -975,7 +967,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_14_2' type='universal'>
       <pose relative_to='link_13'>0 0 0.025 0 0 0</pose>
@@ -990,7 +981,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1002,37 +993,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_15'>
       <pose>0.775 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_15_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_15_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -1041,7 +1032,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_15_2' type='universal'>
       <pose relative_to='link_14'>0 0 0.025 0 0 0</pose>
@@ -1056,7 +1046,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1068,37 +1058,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_16'>
       <pose>0.8250000000000001 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_16_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_16_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -1107,7 +1097,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_16_2' type='universal'>
       <pose relative_to='link_15'>0 0 0.025 0 0 0</pose>
@@ -1122,7 +1111,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1134,37 +1123,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_17'>
       <pose>0.8750000000000001 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_17_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_17_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -1173,7 +1162,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_17_2' type='universal'>
       <pose relative_to='link_16'>0 0 0.025 0 0 0</pose>
@@ -1188,7 +1176,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1200,37 +1188,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_18'>
       <pose>0.925 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_18_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_18_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -1239,7 +1227,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_18_2' type='universal'>
       <pose relative_to='link_17'>0 0 0.025 0 0 0</pose>
@@ -1254,7 +1241,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1266,37 +1253,37 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
     <link name='link_19'>
       <pose>0.9750000000000001 0 0 0 1.570796326794896558 0</pose>
       <inertial>
-        <mass>0.0005</mass>
+        <mass>0.0024</mass>
         <inertia>
-          <ixx>1.1666666666666668e-05</ixx>
-          <iyy>1.1666666666666668e-05</iyy>
-          <izz>2.5e-06</izz>
+          <ixx>5.1e-07</ixx>
+          <iyy>3.0e-08</iyy>
+          <izz>5.1e-07</izz>
         </inertia>
       </inertial>
        <collision name='link_19_collision'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='link_19_vis'>
         <geometry>
           <cylinder>
             <length>0.05</length>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient> <!-- green -->
+          <ambient>0 1 0 1</ambient>
           <diffuse>0 1 0 1</diffuse>
           <specular>0 1 0 1</specular>
         </material>
@@ -1305,7 +1292,6 @@
         <linear>0.1</linear>
         <angular>0.1</angular>
       </velocity_decay>
-      
     </link>
     <joint name='joint_19_2' type='universal'>
       <pose relative_to='link_18'>0 0 0.025 0 0 0</pose>
@@ -1320,7 +1306,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1332,7 +1318,7 @@
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.5</damping>
+          <damping>0.1</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -1341,22 +1327,22 @@
       <inertial>
         <mass>0.001</mass>
         <inertia>
-          <ixx>4.000000000000001e-08</ixx>
-          <iyy>4.000000000000001e-08</iyy>
-          <izz>4.000000000000001e-08</izz>
+          <ixx>4e-08</ixx>
+          <iyy>4e-08</iyy>
+          <izz>4e-08</izz>
         </inertia>
       </inertial>
        <collision name='end_link_collision'>
         <geometry>
           <sphere>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </sphere>
         </geometry>
-      </collision> 
+      </collision>
       <visual name='end_link_visual'>
         <geometry>
           <sphere>
-            <radius>0.01</radius>
+            <radius>0.005</radius>
           </sphere>
         </geometry>
       </visual>
@@ -1367,9 +1353,15 @@
       <parent>link_19</parent>
       <axis>
         <xyz>0 0 1</xyz>
+        <dynamics>
+          <damping>0.1</damping>
+        </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
+        <dynamics>
+          <damping>0.1</damping>
+        </dynamics>
       </axis2>
     </joint>
   </model>

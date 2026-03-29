@@ -14,7 +14,7 @@ This project is a refactored version of the [PX4-ROS2-Gazebo-Drone-Simulation-Te
 | Component | Version |
 | :--- | :--- |
 | Ubuntu | 22.04 |
-| ROS 2 | Humble Hawksbill |
+| ROS 2 | Humble |
 | PX4 Autopilot | 1.16.1 |
 | px4_msgs & px4_ros_com | release/1.16 |
 | Micro-XRCE-DDS-Agent | 3.0.1 |
