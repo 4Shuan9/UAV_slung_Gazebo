@@ -1,13 +1,13 @@
 # UAV_hoist_Gazebo
 
-An Gazebo simulation environment tailored for UAV (Unmanned Aerial Vehicle) lifting and hoisting operations.   
-This project builds upon the robust foundation of the [PX4-ROS2-Gazebo Drone Simulation Template](https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git), incorporating significant enhancements for improved compatibility and functionality.
+A Gazebo simulation environment tailored for UAV  lifting and hoisting operations.   
+This project is a refactored version of the [PX4-ROS2-Gazebo-Drone-Simulation-Template](https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git). It has been specifically adapted for PX4 v1.16.1 and includes critical bug fixes and a new simulation world.
 
-## Key Features & Enhancements
+## Key Features
 
-*   **PX4 v1.16.1 Compatibility:** The core simulation world (`test_world.sdf`) has been reconstructed following official PX4 templates to ensure seamless integration with PX4 Autopilot version 1.16.1.
-*   **Resolved Compass Issue:** Addresses and resolves the QGroundControl (QGC) error `"Found 0 compass"`, ensuring proper sensor initialization and vehicle health checks.
-*   **Specialized Simulation World:** Introduces a new, dedicated world featuring a `basketball_court.sdf` model, providing a structured environment for testing and demonstrating UAV hoisting scenarios.
+*   **PX4 v1.16.1 Compatibility:** The core simulation world (`test_world.sdf`) has been refactored and adapted to align with the official PX4 v1.16.1 Gazebo template.
+*   **Resolved Sensor Issues:** Fixed the "Found 0 compass" error in QGroundControl (QGC) and the issue where no data was published on the `/fmu/out/vehicle_local_position` topic.
+*   **Custom Simulation World:** Introduced a new world that integrates the `basketball_court.sdf` model.
 
 ## System Requirements
 
