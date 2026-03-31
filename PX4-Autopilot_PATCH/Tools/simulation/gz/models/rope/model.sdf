@@ -33,9 +33,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_0_collision'>
@@ -71,13 +71,13 @@
       <axis>
         <xyz>1 0 0</xyz>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -87,9 +87,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_1_collision'>
@@ -127,11 +127,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -139,11 +139,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -152,9 +152,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_2_collision'>
@@ -192,11 +192,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -204,11 +204,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -217,9 +217,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_3_collision'>
@@ -257,11 +257,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -269,11 +269,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -282,9 +282,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_4_collision'>
@@ -322,11 +322,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -334,11 +334,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -347,9 +347,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_5_collision'>
@@ -387,11 +387,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -399,11 +399,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -412,9 +412,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_6_collision'>
@@ -452,11 +452,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -464,11 +464,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -477,9 +477,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_7_collision'>
@@ -517,11 +517,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -529,11 +529,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -542,9 +542,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_8_collision'>
@@ -582,11 +582,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -594,11 +594,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -607,9 +607,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_9_collision'>
@@ -647,11 +647,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -659,11 +659,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -672,9 +672,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_10_collision'>
@@ -717,11 +717,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -729,11 +729,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -742,9 +742,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_11_collision'>
@@ -782,11 +782,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -794,11 +794,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -807,9 +807,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_12_collision'>
@@ -847,11 +847,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -859,11 +859,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -872,9 +872,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_13_collision'>
@@ -912,11 +912,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -924,11 +924,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -937,9 +937,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_14_collision'>
@@ -977,11 +977,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -989,11 +989,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -1002,9 +1002,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_15_collision'>
@@ -1042,11 +1042,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1054,11 +1054,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -1067,9 +1067,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_16_collision'>
@@ -1107,11 +1107,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1119,11 +1119,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -1132,9 +1132,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_17_collision'>
@@ -1172,11 +1172,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1184,11 +1184,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -1197,9 +1197,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_18_collision'>
@@ -1237,11 +1237,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1249,11 +1249,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -1262,9 +1262,9 @@
       <inertial>
         <mass>0.0024</mass>
         <inertia>
-          <ixx>5.1e-07</ixx>
-          <iyy>3.0e-08</iyy>
-          <izz>5.1e-07</izz>
+          <ixx>5.1e-05</ixx>
+          <iyy>5.1e-05</iyy>
+          <izz>3.0e-06</izz>
         </inertia>
       </inertial>
        <collision name='link_19_collision'>
@@ -1302,11 +1302,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
@@ -1314,11 +1314,11 @@
         <limit>
           <lower>-3.141592653589793</lower>
           <upper>3.141592653589793</upper>
-          <effort>1.0</effort>
+          <effort>50.0</effort>
           <velocity>10</velocity>
         </limit>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
@@ -1354,13 +1354,13 @@
       <axis>
         <xyz>0 0 1</xyz>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis>
       <axis2>
         <xyz>0 1 0</xyz>
         <dynamics>
-          <damping>0.1</damping>
+          <damping>0.05</damping>
         </dynamics>
       </axis2>
     </joint>
