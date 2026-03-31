@@ -116,36 +116,36 @@
     <!-- 1. 红球 (负载) -->
     <include>
       <name>payload_ball</name>
-      <!-- 保持在原点，略微抬高防止陷入地面 -->
-      <pose>0 0 0.1 0 0 0</pose>
+      <!-- 移动到 X=1.0 的位置 -->
+      <pose>1.0 0 0.1 0 0 0</pose>
       <uri>model://red_ball</uri>
     </include>
 
     <!-- 2. 绳子 -->
     <include>
       <name>rope</name>
-      <!-- 取消Pitch的-1.5707弧度旋转，使其平铺在地面（沿X轴延伸） -->
-      <pose>0 0 0.1 0 0 0</pose>
+      <!-- 平移到1.0的位置，并绕Z轴旋转180度(3.14159弧度)，使其反向指回原点 -->
+      <pose>1.0 0 0.1 0 0 3.14159</pose>
       <uri>model://rope</uri>
     </include>
 
     <!-- 3. 无人机 -->
     <include>
       <name>x500_mono_cam_down</name>
-      <!-- 将无人机平移到X=1.0的位置（即绳子末端），Z轴降至地面高度 -->
-      <pose>1.0 0 0.1 0 0 0</pose>
+      <!-- 移动到原点 X=0 的位置 -->
+      <pose>0 0 0.1 0 0 0</pose>
       <uri>model://x500_mono_cam_down</uri>
     </include>
 
     <!-- ================= 关节约束部分 ================= -->
     
-    <!-- 无人机与绳子顶端连接 -->
+    <!-- 无人机与绳子顶端连接 (保持不变) -->
     <joint name="uav_rope_joint" type="ball">
       <parent>rope::end_link</parent>
       <child>x500_mono_cam_down::base_link</child>
     </joint>
 
-    <!-- 负载红球与绳子底端连接 -->
+    <!-- 负载红球与绳子底端连接 (保持不变) -->
     <joint name="ball_rope_joint" type="ball">
       <parent>payload_ball::ball_link</parent>
       <child>rope::begin_link</child>
