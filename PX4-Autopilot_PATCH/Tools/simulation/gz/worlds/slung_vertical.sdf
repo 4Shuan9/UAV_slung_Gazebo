@@ -1,22 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sdf version="1.9">
-  <world name="hoist_horizontal">
-    
-    <!-- ================= 核心系统插件 ================= -->
-    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"></plugin>
-    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"></plugin>
-    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"></plugin>
-    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors">
-      <render_engine>ogre2</render_engine>
-    </plugin>
-    <!-- =================  传感器插件  ================= -->
-    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"></plugin>
-    <plugin filename="gz-sim-magnetometer-system" name="gz::sim::systems::Magnetometer"></plugin>
-    <plugin filename="gz-sim-altimeter-system" name="gz::sim::systems::Altimeter"></plugin>
-    <plugin filename="gz-sim-navsat-system" name="gz::sim::systems::NavSat"></plugin>
-    <plugin filename="gz-sim-air-pressure-system" name="gz::sim::systems::AirPressure"></plugin>
-    <!-- ========================================================= -->
-
+  <world name="slung_vertical">
     <physics type="ode">
       <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
@@ -106,43 +90,46 @@
     <spherical_coordinates>
       <surface_model>EARTH_WGS84</surface_model>
       <world_frame_orientation>ENU</world_frame_orientation>
-      <latitude_deg>24.623911</latitude_deg>
-      <longitude_deg>118.087898</longitude_deg>
+      <latitude_deg>47.397971057728974</latitude_deg>
+      <longitude_deg>8.546163739800146</longitude_deg>
       <elevation>0</elevation>
     </spherical_coordinates>
 
-    <!-- ================= 模型载入模块 ================= -->
+    <!-- ================= 核心模型部分 ================= -->
     
     <!-- 1. 红球 (负载) -->
     <include>
       <name>payload_ball</name>
-      <pose>1.0 0 0.1 0 0 0</pose>
-      <uri>model://payload_ball</uri>
+      <pose>0 0 0.1 0 0 0</pose>
+      <uri>model://red_ball</uri>
     </include>
 
     <!-- 2. 绳子 -->
     <include>
       <name>rope</name>
-      <pose>1.0 0 0.1 0 0 3.14159</pose>
+      <!-- Z轴高度根据绳长和模型原点进行微调，Pitch旋转 -90度(在弧度制下为 -1.5707) 使其垂直 -->
+      <pose>0 0 0.1 0 -1.570796326794897 0</pose>
       <uri>model://rope</uri>
     </include>
 
     <!-- 3. 无人机 -->
     <include>
       <name>x500_mono_cam_down</name>
-      <pose>0 0 0.1 0 0 0</pose>
+      <pose>0 0 1.1 0 0 0</pose>
       <uri>model://x500_mono_cam_down</uri>
     </include>
 
-    <!-- ================= 关节约束模块 ================= -->
+    <!-- ================= 关节约束部分 ================= -->
     
+    <!-- 无人机与绳子顶端连接 -->
     <joint name="uav_rope_joint" type="ball">
       <parent>rope::end_link</parent>
       <child>x500_mono_cam_down::base_link</child>
     </joint>
 
+    <!-- 负载红球与绳子底端连接 -->
     <joint name="ball_rope_joint" type="ball">
-      <parent>payload_ball::ball_link</parent>
+      <parent>payload_ball::ball_link</parent> <!-- 若模型里叫 ball_link，请改换成 payload_ball::ball_link -->
       <child>rope::begin_link</child>
     </joint>
 
