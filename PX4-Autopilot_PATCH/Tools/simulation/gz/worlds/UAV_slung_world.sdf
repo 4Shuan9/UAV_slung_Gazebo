@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <sdf version="1.9">
-  <world name="slung_horizontal_basketball">
+  <world name="UAV_slung_world">
     
     <!-- ========================================
          模块一：GUI 界面与插件配置
