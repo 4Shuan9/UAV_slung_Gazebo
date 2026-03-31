@@ -1,6 +1,6 @@
-# UAV_hoist_Gazebo
+# UAV_slung_Gazebo
 
-A Gazebo simulation environment tailored for UAV  lifting and hoisting operations.   
+A Gazebo simulation environment tailored for UAV with a slung payload operations.   
 This project is a refactored version of the [rain_ws](https://github.com/RainbowSeeker/rain_ws.git) & [PX4-ROS2-Gazebo-Drone-Simulation-Template](https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git). It has been specifically adapted for PX4 v1.16.1 and includes critical bug fixes and a new simulation world.
 
 ## Key Features
