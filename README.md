@@ -26,39 +26,15 @@ This project is a refactored version of the [rain_ws](https://github.com/Rainbow
 cd ~/桌面
 ./QGroundControl_5.0.8.AppImage
 
-# XRCE-DDS Agent
-MicroXRCEAgent udp4 -p 8888
-
-# gazebo
-gz sim -r UAV_slung_world.sdf
-
-# PX4
-cd ~/PX4-Autopilot
-export PX4_GZ_MODEL_NAME=x500_mono_cam_down
-./build/px4_sitl_default/bin/px4
-
-# gz_cam
-ros2 run slung_ctrl gz_cam_raw.py
-ros2 run slung_ctrl gz_cam_cv.py
-
-# 启动 ros_gz_bridge 桥接 Pose 话题
-ros2 run ros_gz_bridge parameter_bridge \
-/model/payload_ball/pose@geometry_msgs/msg/PoseStamped[gz.msgs.Pose \
-/model/x500_mono_cam_down/pose@geometry_msgs/msg/PoseStamped[gz.msgs.Pose
-
-# swing_angle
-ros2 run slung_ctrl swing_angle.py
-ros2 run slung_ctrl swing_angle_truth
-ros2 run slung_ctrl swing_angle_cv
-
-# takeoff
-ros2 run slung_ctrl slung_takeoff
+# launch
+ros2 launch slung_ctrl slung_gazebo.launch.py
+ros2 launch slung_ctrl swing_angle.launch.py
 
 # PlotJuggler
 ros2 run plotjuggler plotjuggler
 
-# 暂时放弃
-# 启动 ros_gz_bridge 桥接 imu 话题
+# (temporarily give up)
+# ros_gz_bridge for imu
 ros2 run ros_gz_bridge parameter_bridge /world/UAV_slung_world/model/payload_ball/link/ball_link/sensor/ball_imu/imu@sensor_msgs/msg/Imu[gz.msgs.IMU
 # topic echo
 ros2 topic echo /world/UAV_slung_world/model/payload_ball/link/ball_link/sensor/ball_imu/imu
