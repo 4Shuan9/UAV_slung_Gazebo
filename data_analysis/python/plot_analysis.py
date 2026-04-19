@@ -7,7 +7,7 @@ import os
 # ==========================================
 # 配置区：在此修改文件名和路径
 # ==========================================
-CSV_FILE_PATH = '/home/ashuang/4Shuan9_ws/UAV_hoist_Gazebo/data_analysis/csv/20260416_test1_Data.csv'  # 替换为你的目标CSV文件
+CSV_FILE_PATH = '/home/ashuang/4Shuan9_ws/UAV_hoist_Gazebo/data_analysis/csv/20260418_test1_Data.csv'  # 替换为你的目标CSV文件
 START_TIME_OFFSET = 0  # 绘图起始时间偏移（秒），默认为0
 
 # ==========================================

@@ -54,9 +54,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -108,9 +108,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -173,9 +173,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -238,9 +238,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -303,9 +303,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -368,9 +368,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -433,9 +433,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -498,9 +498,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -563,9 +563,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -628,9 +628,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -693,9 +693,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -763,9 +763,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -828,9 +828,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -893,9 +893,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -958,9 +958,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -1023,9 +1023,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -1088,9 +1088,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -1153,9 +1153,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -1218,9 +1218,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
@@ -1283,9 +1283,9 @@
           </cylinder>
         </geometry>
         <material>
-          <ambient>0 1 0 1</ambient>
-          <diffuse>0 1 0 1</diffuse>
-          <specular>0 1 0 1</specular>
+          <ambient>0.5 0.5 0.5 1</ambient>
+          <diffuse>0.5 0.5 0.5 1</diffuse>
+          <specular>0.5 0.5 0.5 1</specular>
         </material>
       </visual>
       <velocity_decay>
