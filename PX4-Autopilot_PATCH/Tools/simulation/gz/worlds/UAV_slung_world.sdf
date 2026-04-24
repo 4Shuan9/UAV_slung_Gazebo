@@ -30,7 +30,7 @@
     </physics>
 
     <!-- 环境参数 -->
-    <gravity>0 0 -9.8</gravity>
+    <gravity>0 0 -9.81</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type="adiabatic"/>
     
@@ -112,7 +112,7 @@
 
     <include>
       <name>payload_ball</name>
-      <pose>1.0 0 1.5 0 0 0</pose>
+      <pose>1.0 0 2.5 0 0 0</pose>
       <uri>model://payload_ball</uri>
       <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
         <publish_link_pose>false</publish_link_pose>
@@ -126,13 +126,13 @@
 
     <include>
       <name>rope</name>
-      <pose>1.0 0 1.5 0 0 3.14159</pose>
+      <pose>1.0 0 2.5 0 0 3.14159</pose>
       <uri>model://rope</uri>
     </include>
 
     <include>
       <name>x500_mono_cam_down</name>
-      <pose>0 0 1.5 0 0 0</pose>
+      <pose>0 0 2.5 0 0 0</pose>
       <uri>model://x500_mono_cam_down</uri>
       <plugin filename="gz-sim-pose-publisher-system" name="gz::sim::systems::PosePublisher">
         <publish_link_pose>false</publish_link_pose>
