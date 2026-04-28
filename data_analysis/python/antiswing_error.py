@@ -20,8 +20,8 @@ mpl.rcParams['axes.linewidth'] = 0.8
 CSV_FILE_PATH = 'data_analysis/csv/20260427_antiswing_Data.csv'
 OUTPUT_DIR = 'output'
 OUTPUT_FILENAME = '20260427_antiswing_error'
-TIME_RANGE = (0.0, 2.5)
-Y_LIM_ERR = (-0.2, 0.5)
+TIME_RANGE = (0.0, 60.0)
+Y_LIM_ERR = (-0.2, 0.4)
 
 def process_error_plot(file_path):
     if not os.path.exists(file_path):
@@ -60,6 +60,15 @@ def process_error_plot(file_path):
     def plot_sub_err(ax, cv_t, err_cv, comp_t, err_comp, axis_name, title):
         ax.plot(cv_t, err_cv, color='#1f77b4', linestyle='--', linewidth=1.2, label='Raw Error')
         ax.plot(comp_t, err_comp, color='#d62728', linestyle='-.', linewidth=1.5, label='Comp Error')
+        
+        max_err = max(np.max(err_cv), np.max(err_comp))
+        min_err = min(np.min(err_cv), np.min(err_comp))
+        
+        ax.axhline(max_err, color='black', linestyle='--', linewidth=0.8, alpha=0.6)
+        ax.axhline(min_err, color='black', linestyle='--', linewidth=0.8, alpha=0.6)
+        ax.text(TIME_RANGE[0] + 0.05, max_err, f'{max_err:.2f}', color='black', va='bottom', ha='left')
+        ax.text(TIME_RANGE[0] + 0.05, min_err, f'{min_err:.2f}', color='black', va='top', ha='left')
+
         ax.set_ylabel(f'Error ${axis_name}$ (deg)')
         ax.set_xlabel('Time (s)')
         ax.set_title(title, pad=10)

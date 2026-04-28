@@ -21,7 +21,7 @@ CSV_FILE_PATH = 'data_analysis/csv/20260427_antiswing_Data.csv'
 OUTPUT_DIR = 'output'
 OUTPUT_FILENAME = '20260427_antiswing_angle'
 TIME_RANGE = (0.0, 2.5)
-Y_LIM_EST = (-1.0, 2.0)
+Y_LIM_EST = (-1.0, 1.0)
 
 def process_estimation_plot(file_path):
     if not os.path.exists(file_path):
