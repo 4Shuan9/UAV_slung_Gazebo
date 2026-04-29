@@ -61,7 +61,17 @@ def process_3d_trajectory(file_path):
     payload_data['height'] = payload_data[col_payload_z] - 1
 
     fig = plt.figure(figsize=(8, 7))
+
     ax = fig.add_subplot(111, projection='3d')
+    ax.xaxis.pane.set_facecolor("#ffffff00")
+    ax.yaxis.pane.set_facecolor("#ffffff00")
+    ax.zaxis.pane.set_facecolor("#ffffff00")
+
+    ax.xaxis._axinfo["grid"]['linestyle']
+    ax.yaxis._axinfo["grid"]['linestyle']
+    ax.zaxis._axinfo["grid"]['linestyle']
+
+    ax.zaxis.set_major_locator(plt.MultipleLocator(1.0))
 
     if not target_data.empty:
         ax.plot(target_data[col_target_x], 
@@ -77,7 +87,7 @@ def process_3d_trajectory(file_path):
     ax.plot(payload_data['plot_x'], 
             payload_data['plot_y'], 
             payload_data['height'], 
-            color="#ff0e0e", linestyle='-.', linewidth=1.2, alpha=0.8, label='Load Actual', zorder=3)
+            color="#d62728", linestyle='-.', linewidth=1.2, alpha=0.8, label='Load Actual', zorder=3)
 
     ax.set_xlabel('X (m)', labelpad=10)
     ax.set_ylabel('Y (m)', labelpad=10)
