@@ -98,7 +98,7 @@ def process_3d_trajectory(file_path):
     ax.set_xlim(-8.0, 8.0)
     ax.set_ylim(-6.0, 6.0)
 
-    ax.set_title('Dynamic Trajectory Tracking with Load', pad=20)
+    # ax.set_title('Dynamic Trajectory Tracking with Load', pad=20)
     ax.legend(loc='upper right', frameon=True, edgecolor='black')
 
     ax.set_box_aspect((1, 1, 0.7)) 
