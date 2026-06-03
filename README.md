@@ -1,11 +1,11 @@
 # UAV_slung_Gazebo
 
 A Gazebo simulation environment tailored for UAV with a slung payload operations.   
-This project is a refactored version of the [rain_ws](https://github.com/RainbowSeeker/rain_ws.git) & [PX4-ROS2-Gazebo-Drone-Simulation-Template](https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git). It has been specifically adapted for PX4 v1.16.1 and includes critical bug fixes and a new simulation world.
+This project is a refactored version of the [rain_ws](https://github.com/RainbowSeeker/rain_ws.git) & [PX4-ROS2-Gazebo-Drone-Simulation-Template](https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git). It has been specifically adapted for PX4 v1.16.2 and includes critical bug fixes and a new simulation world.
 
 ## Key Features
 
-* **PX4 v1.16.1 Compatibility:** Fully refactored the core simulation world (`test_world.sdf`) to align seamlessly with the official PX4 v1.16.2 Gazebo templates.
+* **PX4 v1.16.2 Compatibility:** Fully refactored the core simulation world (`test_world.sdf`) to align seamlessly with the official PX4 v1.16.2 Gazebo templates.
 * **Enhanced Tether & Payload Dynamics:** Redesigned the tether mechanism by discretizing a 1-meter string into 20 articulated segments, and optimized the payload model to achieve highly realistic slung-load physics.
 * **Dedicated Simulation Environments:** Built specialized simulation worlds tailored exclusively for slung-payload experiments, including the integration of a custom `basketball_court.sdf` model.
 * **Resolved Sensor & Telemetry Issues:** Fixed the "Found 0 compass" error in QGroundControl (QGC) and restored missing data publications on the `/fmu/out/vehicle_local_position` topic.
