@@ -3,6 +3,8 @@
 A Gazebo simulation environment tailored for UAV with a slung payload operations.   
 This project is a refactored version of the [rain_ws](https://github.com/RainbowSeeker/rain_ws.git) & [PX4-ROS2-Gazebo-Drone-Simulation-Template](https://github.com/SathanBERNARD/PX4-ROS2-Gazebo-Drone-Simulation-Template.git). It has been specifically adapted for PX4 v1.16.2 and includes critical bug fixes and a new simulation world.
 
+<img width="800" height="450" alt="Image" src="https://github.com/user-attachments/assets/25f4d2bc-1633-411f-ba27-47eb3d8854ed" />
+
 ## Key Features
 
 * **PX4 v1.16.2 Compatibility:** Fully refactored the core simulation world (`test_world.sdf`) to align seamlessly with the official PX4 v1.16.2 Gazebo templates.
