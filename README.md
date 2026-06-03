@@ -12,7 +12,7 @@ This project is a refactored version of the [rain_ws](https://github.com/Rainbow
 
 ## System Requirements
 
-| Component | Version |
+| **Component** | **Version** |
 | :--- | :--- |
 | Ubuntu | 22.04.5 LTS |
 | ROS 2 | Humble |
@@ -35,7 +35,7 @@ ros2 launch slung_ctrl slung_gazebo.launch.py
 ros2 launch slung_ctrl swing_angle.launch.py
 # 3. Anti-Swing Control (Standard)
 ros2 launch slung_ctrl slung_antiswing.launch.py
-4. Anti-Swing Control (Figure-8 Trajectory)
+# 4. Anti-Swing Control (Figure-8 Trajectory)
 ros2 launch slung_ctrl slung_antiswing_eight.launch.py
 
 # PlotJuggler
