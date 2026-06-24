@@ -10,12 +10,12 @@ mpl.rcParams['font.serif'] = ['Times New Roman']
 mpl.rcParams['mathtext.fontset'] = 'stix'
 mpl.rcParams['axes.facecolor'] = 'white'
 mpl.rcParams['figure.facecolor'] = 'white'
-mpl.rcParams['font.size'] = 10
-mpl.rcParams['axes.labelsize'] = 11
-mpl.rcParams['axes.titlesize'] = 11
-mpl.rcParams['legend.fontsize'] = 10
-mpl.rcParams['xtick.labelsize'] = 9
-mpl.rcParams['ytick.labelsize'] = 9
+mpl.rcParams['font.size'] = 14
+mpl.rcParams['axes.labelsize'] = 14
+mpl.rcParams['axes.titlesize'] = 14
+mpl.rcParams['legend.fontsize'] = 14
+mpl.rcParams['xtick.labelsize'] = 14
+mpl.rcParams['ytick.labelsize'] = 14
 mpl.rcParams['axes.linewidth'] = 0.8
 
 # --- 参数设置 ---

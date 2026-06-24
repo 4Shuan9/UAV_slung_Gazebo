@@ -8,8 +8,8 @@ import os
 mpl.rcParams['font.family'] = 'serif'
 mpl.rcParams['font.serif'] = ['Times New Roman']
 mpl.rcParams['mathtext.fontset'] = 'stix'
-mpl.rcParams['font.size'] = 10
-mpl.rcParams['axes.labelsize'] = 11
+mpl.rcParams['font.size'] = 14
+mpl.rcParams['axes.labelsize'] = 14
 mpl.rcParams['axes.linewidth'] = 0.8
 
 CSV_FILE_PATH = 'data_analysis/csv/20260429_eight_Data.csv'
@@ -94,9 +94,9 @@ def process_3d_trajectory(file_path):
     ax.set_zlabel('Altitude (m)', labelpad=10)
     
     # 坐标轴范围
-    ax.set_zlim(7.0, 11.0)
+    ax.set_zlim(8.0, 11.0)
     ax.set_xlim(-8.0, 8.0)
-    ax.set_ylim(-6.0, 6.0)
+    ax.set_ylim(-5.0, 5.0)
 
     # ax.set_title('Dynamic Trajectory Tracking with Load', pad=20)
     ax.legend(loc='upper right', frameon=True, edgecolor='black')
